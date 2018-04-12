@@ -5,8 +5,9 @@ from tkinter.filedialog import *
 
 
 info = {
-    'path':[]
+    'path': []
 }
+
 
 def make_app():
     app = Tk()
@@ -33,7 +34,7 @@ def compress():
         output = 'C:\\Users\Administrator\Pictures\\'
         name = f_path.split('/')[-1]
         image = Img.open(f_path)
-        image.save(output+'c_'+name,quality=60)
+        image.save(output+'c_'+name, quality=60)
 
 
 app = make_app()
